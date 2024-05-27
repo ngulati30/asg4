@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 4: Lighting</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot">XXX</p>
+
+    <p>
+      <button type="button" id="normal_on">Normal On</button>
+      <button type="button" id="normal_off">Normal Off</button>
+    </p>
+
+    <p>
+      <button type="button" id="LightOn">Light On</button>
+      <button type="button" id="LightOff">Light Off</button>
+    </p>
+
+    <p>
+      Light X
+      <input
+        type="range"
+        min="-250"
+        max="250"
+        value="0"
+        class="slider"
+        id="Xlight"
+      />
+      Light Y
+      <input
+        type="range"
+        min="-250"
+        max="250"
+        value="100"
+        class="slider"
+        id="Ylight"
+      />
+      Light Z
+      <input
+        type="range"
+        min="-250"
+        max="250"
+        value="-200"
+        class="slider"
+        id="Zlight"
+      />
+    </p>
+
+    <p>
+      Body
+      <input
+        type="range"
+        min="-10"
+        max="10"
+        value="0"
+        class="slider"
+        id="bodySlide"
+      />
+      Animation:
+      <button type="button" id="animationBodyOnButton">ON</button>
+      <button type="button" id="animationBodyOffButton">OFF</button>
+    </p>
+
+    <p>
+      Head
+      <input
+        type="range"
+        min="-10"
+        max="10"
+        value="0"
+        class="slider"
+        id="headSlide"
+      />
+      Animation:
+      <button type="button" id="animationHeadOnButton">ON</button>
+      <button type="button" id="animationHeadOffButton">OFF</button>
+    </p>
+
+    <p>
+      Tail
+      <input
+        type="range"
+        min="-10"
+        max="10"
+        value="0"
+        class="slider"
+        id="tailSlide"
+      />
+      Animation:
+      <button type="button" id="animationTailOnButton">ON</button>
+      <button type="button" id="animationTailOffButton">OFF</button>
+    </p>
+
+    <p>
+      Camera Angle
+      <input
+        type="range"
+        min="-360"
+        max="360"
+        value="1"
+        class="slider"
+        id="angleSlide"
+      />
+    </p>
+
+    <p></p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Prism.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
